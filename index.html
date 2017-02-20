@@ -3,30 +3,30 @@
       <title>calendar</title>
       <link rel="stylesheet" type="text/css" href="style.css">
    </head>
-   <Body onLoad="setToday()">
+   <Body>
       <CENTER>
       <H2>Select-A-Month</H2>
       <FORM NAME="calControl" onSubmit="return false;">
-         <TABLE id="mytable td">
+         <TABLE id="mytable" class="td">
             <TR cellspacing=10px>
                <TD COLSPAN=7>
                   <CENTER>
-                     <SELECT NAME="month" onChange="selectDate()">
-                        <OPTION>January
-                        <OPTION>February
-                        <OPTION>March
-                        <OPTION>April
-                        <OPTION>May
-                        <OPTION>June
-                        <OPTION>July
-                        <OPTION>August
-                        <OPTION>September
-                        <OPTION>October
-                        <OPTION>November
-                        <OPTION>December
+                     <SELECT NAME="month" id="month">
+                        <OPTION value="1">January
+                        <OPTION value="2">February
+                        <OPTION value="3">March
+                        <OPTION value="4">April
+                        <OPTION value="5">May
+                        <OPTION value="6">June
+                        <OPTION value="7">July
+                        <OPTION value="8">August
+                        <OPTION value="9">September
+                        <OPTION value="10">October
+                        <OPTION value="11">November
+                        <OPTION value="12">December
                      </SELECT>
-                     <INPUT NAME="year" TYPE=TEXT SIZE=4 MAXLENGTH=4>
-                     <INPUT TYPE="button" NAME="Go" value="Build!" onClick="selectDate()">
+                     <INPUT NAME="year" id="year" value="2017" TYPE=TEXT SIZE=4 MAXLENGTH=4>
+                     <INPUT TYPE="button" NAME="Go" value="Build!" onClick="getInput()">
                   </CENTER>
                </TD>
             </TR>
@@ -41,10 +41,19 @@
                <td>SUN </td>
                <td>MON</td>
                <td>TUE </td>
-               <td> WED</td>
-               <td>THUR </td>
+               <td>WED</td>
+               <td>THU </td>
                <td>FRI </td>
                <td> SAT</td>
+            </tr>
+            <tr>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
             </tr>
             <tr>
                <td> </td>
