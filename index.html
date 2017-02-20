@@ -1,0 +1,99 @@
+<html>
+   <head>
+      <title>calendar</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <Body onLoad="setToday()">
+      <CENTER>
+      <H2>Select-A-Month</H2>
+      <FORM NAME="calControl" onSubmit="return false;">
+         <TABLE id="mytable td">
+            <TR cellspacing=10px>
+               <TD COLSPAN=7>
+                  <CENTER>
+                     <SELECT NAME="month" onChange="selectDate()">
+                        <OPTION>January
+                        <OPTION>February
+                        <OPTION>March
+                        <OPTION>April
+                        <OPTION>May
+                        <OPTION>June
+                        <OPTION>July
+                        <OPTION>August
+                        <OPTION>September
+                        <OPTION>October
+                        <OPTION>November
+                        <OPTION>December
+                     </SELECT>
+                     <INPUT NAME="year" TYPE=TEXT SIZE=4 MAXLENGTH=4>
+                     <INPUT TYPE="button" NAME="Go" value="Build!" onClick="selectDate()">
+                  </CENTER>
+               </TD>
+            </TR>
+         </table>
+      </FORM>
+      <table id="table1" name="table1" cellspacing=10px cellpadding=20px>
+         <FORM NAME="calButtons">
+            <!--<TR>
+               <TD align="center">
+                   <textarea FONT="Courier" NAME="calPage" WRAP=no ROWS=8 COLS=22></textarea> -->
+            <tr>
+               <td>SUN </td>
+               <td>MON</td>
+               <td>TUE </td>
+               <td> WED</td>
+               <td>THUR </td>
+               <td>FRI </td>
+               <td> SAT</td>
+            </tr>
+            <tr>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+            </tr>
+      </TABLE>
+      </FORM>
+      </FONT>
+      <SCRIPT LANGUAGE="JavaScript" src="script.js"></SCRIPT>
+   </body>
+</html>
